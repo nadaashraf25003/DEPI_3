@@ -5,40 +5,49 @@
 /* =========== Global Styles ===========  */
 
 :root {
-  --primary-color: #025f7e;
+  --primary-color: #215C5C;
   --primary-hover-color: #043849;
-  --text-color: #5F616F;
-  --body:#fff;
+  --text-p-color: #5f616f;
+  --text-color: #000;
+  --body: #fff;
 }
 
 body.dark {
-  --primary-color: #37b0d8;
+  --primary-color: #215C5C;
   --primary-hover-color: #267c98;
-  --text-color: #9395a1;
-  --body:#282626;
+  --text-p-color: #9395a1;
+  --text-color: #fff;
+  --body: #282626;
 }
 
 ::-moz-selection {
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: var(--text-p-color);
 }
 
 ::selection {
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: white;
 }
 
-body , header{
-  font-family: "Mozilla Headline", sans-serif;
+body,
+header {
+  font-family: sans-serif;
   background-color: var(--body);
 }
 
-p , li a{
-  color: var(--text-color);
+p,
+li a {
+  color: var(--text-p-color);
 }
-
+h2 , h6 ,.contact{
+color: var(--text-color);
+}
 /* =========== Buttons ===========  */
-
+.color {
+  background-color: var(--primary-color);
+  color: white;
+}
 button {
   background-color: var(--primary-color);
   color: white;
@@ -49,7 +58,16 @@ button:hover {
   background-color: var(--primary-hover-color);
   color: white;
 }
-
+.button {
+  color: var(--primary-color);
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  color: var(--primary-hover-color);
+  background-color: white;
+}
 
 /* 
 <!-- Variant	Media query
