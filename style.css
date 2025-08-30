@@ -6,12 +6,16 @@
 
 :root {
   --primary-color: #025f7e;
-  --text-color: #ef3333;
+  --primary-hover-color: #043849;
+  --text-color: #5F616F;
+  --body:#fff;
 }
 
 body.dark {
   --primary-color: #37b0d8;
-  --text-color: #3e2a2a;
+  --primary-hover-color: #267c98;
+  --text-color: #9395a1;
+  --body:#282626;
 }
 
 ::-moz-selection {
@@ -24,12 +28,12 @@ body.dark {
   color: var(--text-color);
 }
 
-body {
+body , header{
   font-family: "Mozilla Headline", sans-serif;
-  /* background-color: var(--body); */
+  background-color: var(--body);
 }
 
-p{
+p , li a{
   color: var(--text-color);
 }
 
@@ -37,7 +41,13 @@ p{
 
 button {
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: var(--primary-hover-color);
+  color: white;
 }
 
 
