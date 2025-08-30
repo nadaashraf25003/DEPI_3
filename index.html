@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova</title>
+    <link rel="shortcut icon" href="https://themewagon.github.io/Nova-Bootstrap/assets/images/logo-dark.svg "
+        type="image/x-icon">
     <!-- Styles -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- <link href="output.css" rel="stylesheet"> -->
@@ -18,45 +20,50 @@
     <div class="xl:w-6xl lg:w-4xl md:w-2xl sm:w-xl w-full m-auto">
         <!-- ========= Header =========  -->
         <header
-            class="flex items-center justify-between  border-b-2 border-gray-200 xl:w-6xl lg:w-4xl md:w-2xl sm:w-xl w-full fixed m-auto">
+            class="flex items-center justify-between  border-b-2 border-gray-200 xl:w-6xl lg:w-4xl md:w-2xl sm:w-xl w-full fixed mb-24 max-md:p-3 z-3">
             <div class="flex items-center">
                 <div class="logo mr-10"><img
                         src="https://themewagon.github.io/Nova-Bootstrap/assets/images/logo-dark.svg" alt=""></div>
-                <nav>
+                <nav class="max-md:hidden">
                     <ul class="flex">
-                        <li class="p-5 hover:border-b-2 hover:border-black transition-all duration-100 "><a
+                        <li class="xl:p-5 p-2  hover:border-b-2 hover:border-black transition-all duration-100 "><a
                                 href="#Home">Home</a></li>
-                        <li class="p-5 hover:border-b-2 hover:border-black transition-all duration-100 "><a
+                        <li class="xl:p-5 p-2 hover:border-b-2 hover:border-black transition-all duration-100 "><a
                                 href="#About">About</a></li>
-                        <li class="p-5 hover:border-b-2 hover:border-black transition-all duration-100 "><a
+                        <li class="xl:p-5 p-2 hover:border-b-2 hover:border-black transition-all duration-100 "><a
                                 href="#Pricing">Pricing</a></li>
-                        <li class="p-5 hover:border-b-2 hover:border-black transition-all duration-100 "><a
-                                href="#HowItWorks">How It Works</a></li>
-                        <li class="p-5 hover:border-b-2 hover:border-black transition-all duration-100 "><a
+                        <!-- <li class="xl:p-5 lg:p-2 hover:border-b-2 hover:border-black transition-all duration-100 "><a
+                                href="#HowItWorks">How It Works</a></li> -->
+                        <li class="xl:p-5 p-2 hover:border-b-2 hover:border-black transition-all duration-100 "><a
                                 href="#Services">Services</a></li>
-                        <li class="p-5 hover:border-b-2 hover:border-black transition-all duration-100 "><a
+                        <li class="xl:p-5 p-2 hover:border-b-2 hover:border-black transition-all duration-100 "><a
                                 href="#Dropdown">Dropdown</a></li>
-                        <li class="p-5 hover:border-b-2 hover:border-black transition-all duration-100 "><a
+                        <li class="xl:p-5 p-2 hover:border-b-2 hover:border-black transition-all duration-100 "><a
                                 href="#Contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <button class="p-3 rounded">Get Startedsss</button>
+            <button class="xl:p-3 p-2 max-md:hidden rounded">Get Started</button>
+            <button class="hidden max-md:block"> <i class="fa-solid fa-sad-cry"></i></button>
         </header>
+        <br>
         <!-- ========= Home =========  -->
-        <section id="Home ">
+        <section id="Home" class="my-24 flex max-lg:flex-wrap max-sm:mx-3">
             <div class="left">
                 <div class="tilte">
-                    <p>Innovative Fintech Solutions</p>
+                    <span class="bg-green-100 text-green-800 p-2 rounded text-xs uppercase font-bold">Innovative Fintech
+                        Solutions</span>
                 </div>
-                <h2>Secure, Efficient, and User-Friendly Financial Services</h2>
-                <p>Experience the future of finance with our secure, efficient, and user-friendly financial services.
+                <h2 class="text-6xl my-5 max-sm:text-5xl">Secure, Efficient, and User-Friendly Financial Services</h2>
+                <p class="mb-10">Experience the future of finance with our secure, efficient, and user-friendly
+                    financial services.
                 </p>
-                <div class="btns">
-                    <button>Get Started Now</button>
-                    <button>Learn More<i class="fa-solid fa-arrow-alt-circle-right"></i></button>
+                <div class="btns mb-10">
+                    <button class="p-3 rounded">Get Started Now</button>
+                    <button class="p-3 rounded max-sm:mt-5">Learn More <i
+                            class="fa-solid fa-arrow-alt-circle-right"></i></button>
                 </div>
-                <p>Trusted by major companies worldwide</p>
+                <span class="text-green-700">Trusted by major companies worldwide</span>
                 <div class="brands">
                     <!-- <svg></svg>
                     <svg></svg>
@@ -64,30 +71,38 @@
                     <svg></svg> -->
                 </div>
             </div>
-            <div class="right">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="right p-10 relative">
+                <img src="https://themewagon.github.io/Nova-Bootstrap/assets/images/hero-img-1-min.jpg" class="rounded">
+                <img src="https://themewagon.github.io/Nova-Bootstrap/assets/images/card-expenses.png"
+                    class="absolute -bottom-10 left-0 max-sm:hidden w-75">
             </div>
         </section>
         <!-- ========= About =========  -->
         <section id="About">
-            <div class="top">
+            <div class="top my-24 flex max-lg:flex-wrap max-sm:mx-3 gap-14">
                 <div class="left">
-                    <div class="img"><img src="" alt=""></div>
-                    <div class="mission">
-                        <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div class="img"><img
+                            src="https://themewagon.github.io/Nova-Bootstrap/assets/images/about_2-min.jpg" alt=""
+                            class="rounded-xl">
+                    </div>
+                    <div class="mission flex max-lg:flex-wrap max-sm:mx-3 gap-10 p-5 color rounded-xl mt-5">
+                        <div class="icon "><i
+                                class="fa-solid fa-lightbulb bg-green-200 rounded-full p-2 text-black  "></i></div>
                         <div class="content">
-                            <p>Mission Statement</p>
-                            <p>Our mission is to empower individuals and businesses by delivering secure, efficient, and
-                                user-friendly financial services.</p>
+                            <span class="text-xs text-green-200 uppercase">Mission Statement</span>
+                            <p class="color leading-[2]">Our mission is to empower individuals and businesses by
+                                delivering secure, efficient, and
+
                         </div>
                     </div>
                 </div>
                 <div class="right">
                     <div class="tilte">
-                        <p>About us</p>
+                        <span class="bg-green-100 text-green-800 p-2 rounded text-xs uppercase font-bold">About
+                            us</span>
                     </div>
-                    <h2>Experience the future of finance with our secure, efficient, and user-friendly financial
+                    <h2 class="text-4xl my-5 max-sm:text-3xl">Experience the future of finance with our secure,
+                        efficient, and user-friendly financial
                         services
                     </h2>
                     <p>Founded with the vision of revolutionizing the financial industry, we are a leading fintech
@@ -96,312 +111,328 @@
                     <p>Our cutting-edge platform ensures your transactions are safe, streamlined, and easy to manage,
                         empowering
                         you to take control of your financial journey with confidence and convenience.</p>
-                    <h6>Key Values and Vision</h6>
-                    <ul>
-                        <li><span><i class="fa-solid fa-check"></i></span><span>Innovation</span></li>
-                        <li><span><i class="fa-solid fa-check"></i></span><span>Security</span></li>
-                        <li><span><i class="fa-solid fa-check"></i></span><span>User-Centric Design</span></li>
-                        <li><span><i class="fa-solid fa-check"></i></span><span>Transparency</span></li>
-                        <li><span><i class="fa-solid fa-check"></i></span><span>Empowerment</span></li>
+                    <h6 class="font-bold">Key Values and Vision</h6>
+                    <ul class="flex flex-wrap">
+                        <li class="p-3"><span class="w-10 h-10 rounded-full color p-1 mr-2"><i
+                                    class="fa-solid fa-check"></i></span><span>Innovation</span></li>
+                        <li class="p-3"><span class="w-10 h-10 rounded-full color p-1 mr-2"><i
+                                    class="fa-solid fa-check"></i></span><span>Security</span></li>
+                        <li class="p-3"><span class="w-10 h-10 rounded-full color p-1 mr-2"><i
+                                    class="fa-solid fa-check"></i></span><span>User-Centric Design</span></li>
+                        <li class="p-3"><span class="w-10 h-10 rounded-full color p-1 mr-2"><i
+                                    class="fa-solid fa-check"></i></span><span>Transparency</span></li>
+                        <li class="p-3"><span class="w-10 h-10 rounded-full color p-1 mr-2"><i
+                                    class="fa-solid fa-check"></i></span><span>Empowerment</span></li>
                     </ul>
                 </div>
             </div>
-            <div class="buttom">
-                <div class="left">
-                    <h2>Why Choose us</h2>
+            <div class="buttom my-24 flex max-lg:flex-wrap max-sm:mx-3 gap-14 bg-green-50 p-16 rounded-xl">
+                <div class="left w-1/2">
+                    <h3 class="text-4xl mb-5 max-sm:text-3xl">Why Choose us</h3>
                     <p>Experience the future of finance with our secure, efficient, and user-friendly financial
                         services.
                         Our cutting-edge platform ensures your transactions are safe, streamlined, and easy to manage,
                         empowering you to take control of your financial journey with confidence and convenience."</p>
-                    <button>Watch the video</button>
+                    <button class="p-3 rounded mt-5">Watch the video</button>
                 </div>
-                <div class="right">
+                <div class="right grid grid-cols-2 gap-10 max-sm:grid-cols-1">
                     <div class="card">
-                        <div class="icon"><i></i></div>
-                        <h3>User-Friendly Interface</h3>
+                        <span class="p-5 rounded-full bg-green-200 text-center text-green-900"><i
+                                class="fa-solid fa-user-check"></i></span>
+                        <h3 class="font-bold my-6">User-Friendly Interface</h3>
                         <p>Easy navigation with responsive design for various devices.</p>
                     </div>
                     <div class="card">
-                        <div class="icon"><i></i></div>
-                        <h3>Financial Analytics</h3>
+                        <span class="p-5 rounded-full bg-green-200 text-center text-green-900"><i
+                                class="fa-solid fa-chart-line"></i></span>
+                        <h3 class="font-bold my-6">Financial Analytics</h3>
                         <p>Budget tracking, expense categorization, and personalized insights.</p>
                     </div>
                     <div class="card">
-                        <div class="icon"><i></i></div>
-                        <h3>Customer Support</h3>
+                        <span class="p-5 rounded-full bg-green-200 text-center text-green-900"><i
+                                class="fa-solid fa-headset"></i></span>
+                        <h3 class="font-bold my-6">Customer Support</h3>
                         <p>24/7 service via chat, email, phone, and a detailed help center.</p>
                     </div>
                     <div class="card">
-                        <div class="icon"><i></i></div>
-                        <h3>Security Features</h3>
+                        <span class="p-5 rounded-full bg-green-200 text-center text-green-900"><i
+                                class="fa-solid fa-shield"></i></span>
+                        <h3 class="font-bold my-6">Security Features</h3>
                         <p>Data encryption, fraud detection, and prevention mechanisms.</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ========= Pricing =========  -->
-        <section id="Pricing">
-            <div class="tilte">
-                <p>Pricing</p>
+        <section id="Pricing" class="my-24">
+            <div class="tilte mx-auto text-center w-1/2 mb-16">
+                <span class="bg-green-100 text-green-800 p-2 rounded text-xs uppercase font-bold">Pricing</span>
+                <h2 class="text-4xl my-5 max-sm:text-3xl">Plan for every budget</h2>
+                <p>Experience the future of finance with our secure, efficient, and user-friendly financial services</p>
             </div>
-            <h2>Plan for every budget</h2>
-            <p>Experience the future of finance with our secure, efficient, and user-friendly financial services</p>
-            <div class="left">
-                <h2>Personal</h2>
-                <p>Choose a plan that fits your personal financial needs and start managing your finances more
-                    effectively.
-                </p>
-                <p><span>$7</span>/month</p>
-                <button>Get Started</button>
-            </div>
-            <div class="right">
-                <div class="sec1">
-                    <h2>Business</h2>
-                    <p>Optimize your business financial operations with our tailored business plans.</p>
-                    <p><span>$29</span>/month</p>
-                    <button>Get Started</button>
+            <div class="flex max-lg:flex-wrap max-sm:mx-3 gap-5">
+                <div class="left w-100 border-1 border-green-900 rounded-lg p-10">
+                    <h2 class="text-4xl mb-5 max-sm:text-3xl">Personal</h2>
+                    <p>Choose a plan that fits your personal financial needs and start managing your finances more
+                        effectively.
+                    </p>
+                    <p class="my-5"><span class="text-5xl mb-5 max-sm:text-4xl font-bold">$7</span>/month</p>
+                    <button class="p-3 rounded">Get Started</button>
                 </div>
-                <div class="sec2">
-                    <h6>Features</h6>
-                    <ul>
-                        <li><span><i class="fa-solid fa-check"></i></span><span>Personalized financial insights and
-                                reports</span></li>
-                        <li><span><i class="fa-solid fa-check"></i></span><span>Priority customer support</span></li>
-                        <li><span><i class="fa-solid fa-check"></i></span><span>Access to exclusive investment
-                                opportunities</span></li>
-                        <li><span><i class="fa-solid fa-check"></i></span><span>AI-driven financial
-                                recommendations</span>
-                        </li>
-                    </ul>
+                <div class="right w-full bg-[#215C5C] rounded-lg p-10 flex max-lg:flex-wrap">
+                    <div class="sec1 w-75">
+                        <h2 class="text-4xl mb-5 max-sm:text-3xl color">Business</h2>
+                        <span class="color">Optimize your business financial operations with our tailored business plans.</span>
+                        <p class="my-5"><span class="text-5xl mb-5 max-sm:text-4xl font-bold text-green-200">$29</span><span class="text-green-200">/month</span></p>
+                        <button class="p-3 rounded button max-lg:mb-15">Get Started</button>
+                    </div>
+                    <div class="sec2">
+                        <h5 class="text-green-200 uppercase font-bold text-xs mb-5">Features</h5>
+                        <ul>
+                            <li class="mb-5"><span class="border-1 border-white rounded-full p-0.5 text-[15px] text-white"><i class="fa-solid fa-check"></i></span><span class="color text-[18px] pl-2">Personalized financial insights and
+                                    reports</span></li>
+                            <li class="mb-5"><span class="border-1 border-white rounded-full p-0.5 text-[15px] text-white"><i class="fa-solid fa-check"></i></span><span class="color text-[18px] pl-2">Priority customer support</span></li>
+                            <li class="mb-5"><span class="border-1 border-white rounded-full p-0.5 text-[15px] text-white"><i class="fa-solid fa-check"></i></span><span class="color text-[18px] pl-2">Access to exclusive investment
+                                    opportunities</span></li>
+                            <li class="mb-5"><span class="border-1 border-white rounded-full p-0.5 text-[15px] text-white"><i class="fa-solid fa-check"></i></span><span class="color text-[18px] pl-2">AI-driven financial
+                                    recommendations</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- ========= How It Works =========  -->
-        <section id="HowItWorks">
-            <div class="tilte">
-                <p>How it works</p>
+        <section id="HowItWorks" class="my-24">
+            <div class="tilte mx-auto text-center w-1/2 mb-16">
+                <span class="bg-green-100 text-green-800 p-2 rounded text-xs uppercase font-bold">How it works</span>
+                <h2 class="text-4xl my-5 max-sm:text-3xl">How It Works</h2>
+                <p>Our platform is designed to make managing your finances simple and efficient. Follow these easy steps
+                    to
+                    get
+                    started:</p>
             </div>
-            <h2>How It Works</h2>
-            <p>Our platform is designed to make managing your finances simple and efficient. Follow these easy steps to
-                get
-                started:</p>
-            <div class="cards">
-                <div class="card">
-                    <div class="index"><span>1</span></div>
-                    <h3>Sign Up</h3>
+            <div class="cards flex max-lg:flex-wrap max-sm:mx-4 gap-5">
+                <div class="card text-center">
+                    <div class="index w-15 h-15 rounded-full bg-[#215C5C] text-white flex items-center justify-center mx-auto "><span class="font-bold">1</span></div>
+                    <h6 class="text-2xl my-5">Sign Up</h6>
                     <p>Visit our website or download our app to sign up. Provide basic information to set up your secure
                         account.</p>
                 </div>
-                <div class="card">
-                    <div class="index"><span>2</span></div>
-                    <h3>Set Up Your Profile</h3>
+                <div class="card text-center">
+                    <div class="index w-15 h-15 rounded-full bg-[#215C5C] text-white flex items-center justify-center mx-auto "><span class="font-bold">2</span></div>
+                    <h6 class="text-2xl my-5">Set Up Your Profile</h6>
                     <p>Add your personal or business details to tailor the platform to your specific needs.</p>
                 </div>
-                <div class="card">
-                    <div class="index"><span>3</span></div>
-                    <h3>Explore Features</h3>
+                <div class="card text-center">
+                    <div class="index w-15 h-15 rounded-full bg-[#215C5C] text-white flex items-center justify-center mx-auto "><span class="font-bold">3</span></div>
+                    <h6 class="text-2xl my-5">Explore Features</h6>
                     <p>Access your dashboard for a summary of your finances: balances, recent transactions, and
                         insights.
                     </p>
                 </div>
-                <div class="card">
-                    <div class="index"><span>4</span></div>
-                    <h3>Invest and Grow</h3>
+                <div class="card text-center">
+                    <div class="index w-15 h-15 rounded-full bg-[#215C5C] text-white flex items-center justify-center mx-auto "><span class="font-bold">4</span></div>
+                    <h6 class="text-2xl my-5">Invest and Grow</h6>
                     <p>Discover a variety of investment opportunities tailored to your financial goals.</p>
                 </div>
             </div>
         </section>
         <!-- ========= Numbers =========  -->
-        <section class="Numbers">
+        <section
+            class="Numbers my-24 flex max-lg:flex-wrap max-sm:mx-3 gap-52 max-xl:gap-24 justify-center bg-linear-to-r from-[#215C5C] to-[#36a4a4]  p-16 rounded-xl">
             <div class="sec">
-                <h1>10K+</h1>
-                <p>Customer Satisfaction</p>
+                <h1 class="text-5xl my-5 max-sm:text-4xl text-green-200">10K+</h1>
+                <span class="text-white text-xl">Customer Satisfaction</span>
             </div>
             <div class="sec">
-                <h1>200%+</h1>
-                <p>Revenue Increase</p>
+                <h1 class="text-5xl my-5 max-sm:text-4xl text-green-200">200%+</h1>
+                <span class="text-white text-xl">Revenue Increase</span>
             </div>
             <div class="sec">
-                <h1>20x</h1>
-                <p>Business Growth</p>
+                <h1 class="text-5xl my-5 max-sm:text-4xl text-green-200">20x</h1>
+                <span class="text-white text-xl">Business Growth</span>
             </div>
         </section>
         <!-- ========= Services =========  -->
-        <section id="Services">
-            <div class="tilte">
-                <p>Our Services</p>
+        <section id="Services" class="my-24">
+            <div class="tilte mx-auto text-center w-1/2 mb-16">
+                <sapn class="bg-green-100 text-green-800 p-2 rounded text-xs uppercase font-bold">Our Services</sapn>
+                <h2 class="text-3xl my-5 max-sm:text-2xl">Empowering Financial Innovation Through Cutting-Edge Services
+                </h2>
             </div>
-            <h2>Empowering Financial Innovation Through Cutting-Edge Services</h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="img"><img src="" alt=""></div>
-                    <h2>Digital Payments</h2>
+            <div class="cards grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:mx-5c gap-5">
+                <div class="card p-10 border-1 border-gray-300 rounded-xl">
+                    <h2 class="text-2xl mb-5">Digital Payments</h2>
                     <p>Seamless and secure transactions through various digital platforms, enabling quick and convenient
                         payments for businesses and consumers alike.</p>
-                    <div class="details">
-                        <i class="fa-solid fa-arrow-alt-circle-up"></i>
-                        <a href="#">Read more</a>
+                    <div class="details mt-16">
+                        <i class="fa-solid fa-arrow-alt-circle-right contact"></i>
+                        <a href="#" class="text-green-800">Read more</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="img"><img src="" alt=""></div>
-                    <h2>Personal Finance Management</h2>
+                <div class="card p-10 border-1 border-gray-300 rounded-xl">
+                    <h2 class="text-2xl mb-5">Personal Finance Management</h2>
                     <p>Seamless and secure transactions through various digital platforms, enabling quick and convenient
                         payments for businesses and consumers alike.</p>
-                    <div class="details">
-                        <i class="fa-solid fa-arrow-alt-circle-up"></i>
-                        <a href="#">Read more</a>
+                    <div class="details mt-10">
+                        <i class="fa-solid fa-arrow-alt-circle-right contact"></i>
+                        <a href="#" class="text-green-800">Read more</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="img"><img src="" alt=""></div>
-                    <h2>Online Lending</h2>
+                <div class="card p-10 border-1 border-gray-300 rounded-xl">
+                    <h2 class="text-2xl mb-5">Online Lending</h2>
                     <p>Fast and accessible lending services that provide personal and business loans through online
                         platforms, simplifying the borrowing process.</p>
-                    <div class="details">
-                        <i class="fa-solid fa-arrow-alt-circle-up"></i>
-                        <a href="#">Read more</a>
+                    <div class="details mt-24"> 
+                        <i class="fa-solid fa-arrow-alt-circle-right contact"></i>
+                        <a href="#" class="text-green-800">Read more</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="img"><img src="" alt=""></div>
-                    <h2>Investment Platforms</h2>
+                <div class="card p-10 border-1 border-gray-300 rounded-xl">
+                    <h2 class="text-2xl mb-5">Investment Platforms</h2>
                     <p>User-friendly platforms that allow individuals to invest in stocks, bonds, and other assets with
                         minimal barriers, making investment accessible to all.</p>
-                    <div class="details">
-                        <i class="fa-solid fa-arrow-alt-circle-up"></i>
-                        <a href="#">Read more</a>
+                    <div class="details mt-14">
+                        <i class="fa-solid fa-arrow-alt-circle-right contact"></i>
+                        <a href="#" class="text-green-800">Read more</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="img"><img src="" alt=""></div>
-                    <h2>Cryptocurrency Trading</h2>
+                <div class="card p-10 border-1 border-gray-300 rounded-xl">
+                    <h2 class="text-2xl mb-5">Cryptocurrency Trading</h2>
                     <p>Services that facilitate the buying, selling, and trading of cryptocurrencies, offering users a
                         gateway to the digital currency market.</p>
-                    <div class="details">
-                        <i class="fa-solid fa-arrow-alt-circle-up"></i>
-                        <a href="#">Read more</a>
+                    <div class="details mt-14">
+                        <i class="fa-solid fa-arrow-alt-circle-right contact"></i>
+                        <a href="#" class="text-green-800">Read more</a>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="img"><img src="" alt=""></div>
-                    <h2>Insurtech Solutions</h2>
+                <div class="card p-10 border-1 border-gray-300 rounded-xl">
+                    <h2 class="text-2xl mb-5">Insurtech Solutions</h2>
                     <p>Innovative insurance services that leverage technology to offer personalized policies, faster
                         claims
                         processing, and enhanced customer experiences.</p>
-                    <div class="details">
-                        <i class="fa-solid fa-arrow-alt-circle-up"></i>
-                        <a href="#">Read more</a>
+                    <div class="details mt-10">
+                        <i class="fa-solid fa-arrow-alt-circle-right contact" ></i>
+                        <a href="#" class="text-green-800">Read more</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ========= FAQ =========  -->
-        <section id="FAQ">
-            <div class="tilte">
-                <p>FAQ</p>
+        <section id="FAQ" class="my-24">
+            <div class="tilte mx-auto text-center w-1/2 mb-16">
+                <sapn class="bg-green-100 text-green-800 p-2 rounded text-xs uppercase font-bold">FAQ</sapn>
+                <h2 class="text-4xl my-5 max-sm:text-3xl">Frequently Asked Questions</h2>
+                <p>Utilize our tools to develop your concepts and bring your vision to life. Once complete, effortlessly
+                    share
+                    your creations.</p>
             </div>
-            <h2>Frequently Asked Questions</h2>
-            <p>Utilize our tools to develop your concepts and bring your vision to life. Once complete, effortlessly
-                share
-                your creations.</p>
         </section>
         <!-- ========= Contact =========  -->
-        <section id="Contact">
-            <div class="tilte">
-                <p>Contact</p>
+        <section id="Contact" class="my-24">
+            <div class="tilte mx-auto text-center w-1/2 mb-16">
+                <span class="bg-green-100 text-green-800 p-2 rounded text-xs uppercase font-bold">Contact</span>
+                <h2 class="text-4xl my-5 max-sm:text-3xl">Contact Us</h2>
+                <p>Utilize our tools to develop your concepts and bring your vision to life. Once complete, effortlessly
+                    share
+                    your creations.</p>
             </div>
-            <h2>Contact Us</h2>
-            <p>Utilize our tools to develop your concepts and bring your vision to life. Once complete, effortlessly
-                share
-                your creations.</p>
-            <div class="left">
-                <div class="card">
-                    <div class="icon"><i></i></div>
-                    <p>Phone</p>
-                    <p>+(01 234 567 890)</p>
+            <div class="flex max-lg:flex-wrap  max-sm:mx-5">
+                <div class="left w-1/2">
+                    <div class="card flex gap-5 mb-10">
+                        <div class="w-10 h-10 rounded-full border-2 border-gray-300  contact  text-center p-2 "><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <p>Phone</p>
+                            <p class="font-bold">+(01 234 567 890)</p>
+                        </div>
+                    </div>
+                    <div class="card flex gap-5 mb-10">
+                        <div class="w-10 h-10 rounded-full border-2 border-gray-300 contact text-center p-2"><i class="fa-solid fa-mail-bulk"></i></div>
+                        <div>
+                            <p>Email</p>
+                            <p class="font-bold">info@mydomain.com</p>
+                        </div>
+                    </div>
+                    <div class="card flex gap-5">
+                        <div class="w-10 h-10 rounded-full border-2 border-gray-300  contact text-center p-2"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <p>Address</p>
+                            <p class="font-bold">123 Main Street Apt 4B Springfield,
+                                IL 62701 United States</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="icon"><i></i></div>
-                    <p>Email</p>
-                    <p>info@mydomain.com</p>
+                <div class="right max-lg:w-75">
+                    <form action="">
+                        <label for="name" class="contact">Name</label><br>
+                        <input type="text" name="name" id="name" required class="w-100 border-1 rounded border-gray-200 p-1 mb-5 mt-1 max-lg:w-75 max-sm:w-50 focus:border-black focus:outline-none"><br>
+                        <label for="email" class="contact">Email</label><br>
+                        <input type="email" name="email" id="email" required class="w-100 border-1 rounded border-gray-200 p-1 mb-5 mt-1 max-lg:w-75 max-sm:w-50 focus:border-black focus:outline-none"><br>
+                        <label for="subject" class="contact">Subject</label><br>
+                        <input type="text" name="subject" id="subject" required class="w-100 border-1 rounded border-gray-200 p-1 mb-5 mt-1 max-lg:w-75 max-sm:w-50 focus:border-black focus:outline-none"><br>
+                        <label for="message" class="contact">Message</label><br>
+                        <textarea name="message" id="message" rows="5" class="w-100 border-1 rounded border-gray-200 p-1 mb-5 mt-1 max-lg:w-75 max-sm:w-50 focus:border-black focus:outline-none"></textarea><br>
+                        <button class="p-3 rounded">Send Message</button>
+                    </form>
                 </div>
-                <div class="card">
-                    <div class="icon"><i></i></div>
-                    <p>Address</p>
-                    <p>123 Main Street Apt 4B Springfield,
-                        IL 62701 United States</p>
-                </div>
-            </div>
-            <div class="right">
-                <form action="">
-                    <label for="name">Name</label><br>
-                    <input type="text" name="name" id="name" required><br>
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email" required><br>
-                    <label for="subject">Subject</label><br>
-                    <input type="text" name="subject" id="subject" required><br>
-                    <label for="message">Message</label><br>
-                    <textarea name="message" id="message" rows="5"></textarea><br>
-                    <button>Send Message</button>
-                </form>
             </div>
         </section>
         <!-- ========= Footer =========  -->
-        <footer>
-            <div class="sec">
-                <div class="left">
-                    <h2>Join our newsletter</h2>
+        <footer class="bg-green-100 p-5 rounded-t-2xl">
+            <div class="sec flex max-lg:flex-wrap max-sm:mx-3 gap-5 mb-10">
+                <div class="left ">
+                    <h5 class="text-xl">Join our newsletter</h5>
                     <p>Stay updated with our latest templates and offers—join our newsletter today!</p>
                 </div>
                 <div class="right">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button>Subscribe</button>
+                    <input type="email" placeholder="Enter your email" required class="w-100 border-1 rounded border-gray-200 p-3 mb-5 mt-1 max-lg:w-75 max-sm:w-50 focus:border-black focus:outline-none bg-white">
+                    <button class="p-3 rounded">Subscribe</button>
                 </div>
             </div>
-            <div class="sec">
-                <div class="subsec">
-                    <h3>About</h3>
+            <div class="sec flex max-lg:flex-wrap max-sm:mx-3 gap-5 mb-10">
+                <div class="subsec w-100">
+                    <h5 class="text-xl">About</h5>
                     <p>Utilize our tools to develop your concepts and bring your vision to life. Once complete,
                         effortlessly
                         share your creations.</p>
                 </div>
-                <div class="subsec">
-                    <h3>Company</h3>
-                    <p>Leadership</p>
-                    <p>Careers <span>we're hiring</span></p>
-                    <p>Case Studies</p>
-                    <p>Terms & Conditions</p>
-                    <p>Privacy Policy</p>
-                    <p>404 page</p>
+                <div class="subsec w-50">
+                    <h5 class="text-xl">Company</h5>
+                    <p class="text-[15px] mb-2">Leadership</p>
+                    <p class="text-[15px] mb-2">Careers <span class="bg-green-300 p-2 rounded text-green-700">we're hiring</span></p>
+                    <p class="text-[15px] mb-2">Case Studies</p>
+                    <p class="text-[15px] mb-2">Terms & Conditions</p>
+                    <p class="text-[15px] mb-2">Privacy Policy</p>
+                    <p class="text-[15px] mb-2">404 page</p>
+                </div>
+                <div class="subsec w-50">
+                    <h5 class="text-xl">Accounts</h5>
+                    <p class="text-[15px] mb-2">Register</p>
+                    <p class="text-[15px] mb-2">Sign in</p>
+                    <p class="text-[15px] mb-2">Fogot Password</p>
+                    <p class="text-[15px] mb-2">Coming soon</p>
+                    <p class="text-[15px] mb-2">Portfolio Masonry</p>
                 </div>
                 <div class="subsec">
-                    <h3>Accounts</h3>
-                    <p>Register</p>
-                    <p>Sign in</p>
-                    <p>Fogot Password</p>
-                    <p>Coming soon</p>
-                    <p>Portfolio Masonry</p>
-                </div>
-                <div class="subsec">
-                    <h3>Contact</h3>
-                    <p><i></i> <span>123 Main Street Apt 4B Springfield,
+                    <h5 class="text-xl">Contact</h5>
+                    <p class="text-[15px] mb-2"><i class="fa-solid fa-location-dot mr-3"></i> <span>123 Main Street Apt 4B Springfield,
                             IL 62701 United States</span></p>
-                    <p><i></i> <span>info@mydomain.com</span></p>
-                    <p><i></i> <span>+(01 234 567 890)</span></p>
-                    <p><i></i> <span>FreeBootstrap.net</span></p>
+                    <p class="text-[15px] mb-2"><i class="fa-solid fa-mail-bulk mr-3"></i> <span>info@mydomain.com</span></p>
+                    <p class="text-[15px] mb-2"><i class="fa-solid fa-phone mr-3"></i> <span>+(01 234 567 890)</span></p>
+                    <p class="text-[15px] mb-2"><i class="fa-solid fa-globe mr-3"></i> <span>FreeBootstrap.net</span></p>
                 </div>
             </div>
-            <div class="sec">
+            <div class="sec flex max-lg:flex-wrap max-sm:mx-3 gap-5 mb-10 justify-between">
                 <p>© 2025 Nova. All rights reserved. Designed with by FreeBootstrap.net</p>
-                <p>Distributed by <span>ThemeWagon</span></p>
+                <p>Distributed by <span class="font-bold">ThemeWagon</span></p>
             </div>
         </footer>
     </div>
 
 
-    <button class="up"><i class="fa-solid fa-arrow-up"></i></button>
-    <button class="theme"><i class="fa-solid fa-moon"></i></button>
+    <button class="up fixed bottom-10 right-10 w-10 h-10 rounded-full"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="theme fixed bottom-22 right-10 w-10 h-10 rounded-full"><i class="fa-solid fa-moon"></i></button>
 
     <!-- =========== Script ===========   -->
     <script>
