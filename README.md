@@ -23,3 +23,8 @@ A **modern, responsive, and user-friendly landing page** for a fintech company, 
 - **JavaScript** – Interactivity (theme toggle, FAQ accordion, navbar behavior).
 - **Font Awesome** – Icons for UI elements.
 
+## 📸 Screenshot
+
+![Homepage Screenshot](IMG.jpg)
+
+---
