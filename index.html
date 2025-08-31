@@ -24,7 +24,8 @@
             <div class="flex items-center">
                 <div class="logo mr-10"><img
                         src="https://themewagon.github.io/Nova-Bootstrap/assets/images/logo-dark.svg" alt=""></div>
-                <nav class="max-md:hidden">
+                <nav>
+                    <div class="close"><i class="fa-solid fa-close"></i></div>
                     <ul class="flex">
                         <li class="xl:p-5 p-2  hover:border-b-2 hover:border-black transition-all duration-100 "><a
                                 href="#Home">Home</a></li>
@@ -54,8 +55,10 @@
                     </ul>
                 </nav>
             </div>
-            <button class="xl:p-3 p-2 max-md:hidden rounded">Get Started</button>
-            <button class="hidden max-md:block"> <i class="fa-solid fa-sad-cry"></i></button>
+            <button class="xl:p-3 p-2 max-lg:hidden rounded">Get Started</button>
+            <div class="coll">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
         <br>
         <!-- ========= Home =========  -->
@@ -604,6 +607,26 @@
             });
         });
 
+
+
+        // For Navbar
+        document.querySelector(".coll").addEventListener('click', () => {
+            document.querySelector("nav").classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when nav is open
+        });
+
+        document.querySelector(".close").addEventListener('click', () => {
+            document.querySelector("nav").classList.remove('active');
+            document.body.style.overflow = ''; // Re-enable scrolling
+        });
+
+        // Close nav when clicking on a link
+        document.querySelectorAll("nav a").forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector("nav").classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
     </script>
 </body>
 
