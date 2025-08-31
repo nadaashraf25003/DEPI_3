@@ -71,6 +71,7 @@ button:hover {
   background-color: white;
 }
 
+/* =========== FAQ ===========  */
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -86,6 +87,7 @@ button:hover {
   transform: rotate(180deg);
 }
 
+/* =========== Dropdown List ===========  */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -110,6 +112,64 @@ button:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* =========== Collapse ===========  */
+.coll , .close {
+  display: none;
+  cursor: pointer;
+  color: var(--text-color) !important;
+}
+
+@media (max-width: 800px) {
+  .coll {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Navigation styles for mobile */
+  nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: var(--primary-color);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 2rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  nav .close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+
+  nav ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
 }
 
 /* 
