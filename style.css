@@ -5,7 +5,7 @@
 /* =========== Global Styles ===========  */
 
 :root {
-  --primary-color: #215C5C;
+  --primary-color: #215c5c;
   --primary-hover-color: #043849;
   --text-p-color: #5f616f;
   --text-color: #000;
@@ -13,7 +13,7 @@
 }
 
 body.dark {
-  --primary-color: #215C5C;
+  --primary-color: #215c5c;
   --primary-hover-color: #267c98;
   --text-p-color: #9395a1;
   --text-color: #fff;
@@ -40,8 +40,10 @@ p,
 li a {
   color: var(--text-p-color);
 }
-h2 , h6 ,.contact{
-color: var(--text-color);
+h2,
+h6,
+.contact {
+  color: var(--text-color);
 }
 /* =========== Buttons ===========  */
 .color {
@@ -67,6 +69,47 @@ button:hover {
 .button:hover {
   color: var(--primary-hover-color);
   background-color: white;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  line-height: 1.6;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: var(--primary-color);
+  min-width: 25%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s linear;
+  border-bottom: 1px solid #f1f1f1;
+}
+.dropdown-content a:hover {
+  background: var(--primary-hover-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* 
